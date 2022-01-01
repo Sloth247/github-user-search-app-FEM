@@ -1,0 +1,20 @@
+@use '../sass/variables';
+@use '../sass/mixins';
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  &.dark {
+    color: variables.$color-gray;
+    & a {
+      color: variables.$color-blue-gray;
+    }
+  }
+  &.light {
+    color: variables.$color-blue-gray;
+    & a {
+      color: variables.$color-light-blue;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@use '../sass/variables';
+@use '../sass/mixins';
+
+.header {
+  margin-bottom: 2.25rem;
+  @include mixins.mq(medium) {
+    padding-top: 0;
+  }
+  &__logo {
+    font-size: 1.625rem;
+    font-weight: bold;
+    &.light {
+      color: variables.$color-dark-blue;
+    }
+    &.dark {
+      color: variables.$color-white;
+    }
+  }
+  &__theme-btn {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    &:hover > svg.dark path {
+      fill: #90a4d4;
+    }
+    &:hover > svg.light path {
+      fill: #222731;
+    }
+    &.dark {
+      color: variables.$color-white;
+      &:hover {
+        color: #90a4d4;
+      }
+    }
+
+    &.light {
+      color: variables.$color-gray;
+      &:hover {
+        color: #222731;
+      }
+    }
+  }
+  &__theme-icon {
+    margin-left: 1.125rem;
+    &.dark {
+      &:hover path {
+        fill: #90a4d4;
+      }
+    }
+    &.light {
+      &:hover path {
+        fill: #222731;
+      }
+    }
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

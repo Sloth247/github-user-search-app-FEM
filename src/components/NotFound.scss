@@ -1,0 +1,16 @@
+@use '../sass/variables';
+@use '../sass/mixins';
+
+.not-found {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  padding: 3rem;
+  .dark {
+    background-color: variables.$color-black-darkmode;
+    color: variables.$color-white;
+  }
+  .light {
+    background-color: variables.$color-white;
+  }
+}
