@@ -8,6 +8,7 @@ import WebsiteIcon from '../components/svg/WebsiteIcon';
 import GithubContext from '../context/GithubContext';
 import ThemeContext from '../context/ThemeContext';
 import NotFound from './NotFound';
+import Loading from './Loading';
 // import { useParams } from 'react-router-dom';
 
 export default function UserResult() {
@@ -129,6 +130,6 @@ export default function UserResult() {
   } else if (error) {
     return <NotFound />;
   } else {
-    return <h2>Loading...</h2>;
+    return <Loading />;
   }
 }

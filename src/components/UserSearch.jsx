@@ -46,9 +46,14 @@ export default function UserSearch() {
             value={text}
             onChange={handleChange}
             onInput={handleInput}
+            aria-controls="error-msg"
           />
         </label>
-        {error && <p className="error-msg">No results</p>}
+        {error && (
+          <p className="error-msg" id="error-msg" aria-live="polite">
+            No results
+          </p>
+        )}
         <button className="input-btn">Search</button>
       </form>
     </div>

@@ -1,0 +1,25 @@
+@use '../sass/variables';
+@use '../sass/mixins';
+
+.loading-msg {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  & img {
+    width: 1.5rem;
+    margin-left: 1rem;
+    @include mixins.mq(large) {
+      font-size: 3rem;
+    }
+  }
+  @include mixins.mq(large) {
+    font-size: 3rem;
+  }
+  &-container {
+    padding: 6rem 0;
+    text-align: center;
+    @include mixins.mq(large) {
+      padding: 9rem 0;
+    }
+  }
+}
