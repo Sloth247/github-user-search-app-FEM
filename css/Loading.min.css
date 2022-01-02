@@ -1,0 +1,3 @@
+.loading-msg{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:1.5rem}.loading-msg img{width:1.5rem;margin-left:1rem}@media screen and (min-width: 80em){.loading-msg img{font-size:3rem}}@media screen and (min-width: 80em){.loading-msg{font-size:3rem}}.loading-msg-container{padding:6rem 0;text-align:center}@media screen and (min-width: 80em){.loading-msg-container{padding:9rem 0}}
+
+/*# sourceMappingURL=Loading.min.css.map */

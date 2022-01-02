@@ -4,7 +4,14 @@
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 0.4rem;
-  padding: 3rem;
+  padding: 6rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 80em) {
+  .not-found {
+    padding: 9rem 0;
+    font-size: 3rem;
+  }
 }
 .not-found .dark {
   background-color: #141d2f;

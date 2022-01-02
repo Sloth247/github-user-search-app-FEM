@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/components/NotFound.scss","../src/sass/_variables.scss"],"names":[],"mappings":"AAGA,WACE,gBAAA,CACA,gBAAA,CACA,mBAAA,CACA,YAAA,CACA,iBACE,wBCGmB,CDFnB,aAAA,CAEF,kBACE,wBCHU","file":"NotFound.min.css"}
+{"version":3,"sources":["../src/components/NotFound.scss","../src/sass/_mixins.scss","../src/sass/_variables.scss"],"names":[],"mappings":"AAGA,WACE,gBAAA,CACA,gBAAA,CACA,mBAAA,CACA,cAAA,CACA,iBAAA,CCKE,oCDVJ,WAQI,cAAA,CACA,cAAA,CAAA,CAEF,iBACE,wBEHmB,CFInB,aENU,CFQZ,kBACE,wBETU","file":"NotFound.min.css"}
