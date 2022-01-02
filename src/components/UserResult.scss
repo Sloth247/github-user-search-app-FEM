@@ -32,7 +32,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, minmax(min-content, max-content));
-      align-items: center;
+      align-self: start;
     }
   }
   &__avatar {
@@ -47,9 +47,19 @@
       height: 7.1325rem;
       margin-right: 2.56rem;
     }
+    @include mixins.mq(large) {
+      grid-column: 1/2;
+      grid-row: 1/-1;
+    }
   }
   &__name {
     font-size: 1rem;
+    &.light {
+      color: variables.$color-dark-blue;
+    }
+    &.dark {
+      color: variables.$color-white;
+    }
     @include mixins.mq(medium) {
       font-size: 1.625rem;
     }
@@ -64,10 +74,12 @@
     margin-bottom: 0.5rem;
     @include mixins.mq(medium) {
       font-size: 1rem;
+      margin-bottom: 1rem;
     }
     @include mixins.mq(large) {
       grid-column: 1/2;
       grid-row: 2/-1;
+      margin-bottom: 0;
     }
   }
   &__date {
@@ -85,6 +97,7 @@
     grid-column: 1/-1;
     @include mixins.mq(large) {
       grid-column: 2/-1;
+      margin-top: 1.25rem;
     }
   }
   &__stats {

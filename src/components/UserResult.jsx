@@ -25,7 +25,7 @@ export default function UserResult() {
       <div className={`user-container ${mode}`}>
         <img src={user.avatar_url} alt="" className="user__avatar" />
         <div className="user__profile-container">
-          <h1 className="user__name">{user.name}</h1>
+          <h1 className={`user__name ${mode}`}>{user.name}</h1>
           <a
             href={`http://github.com/${user.login}`}
             target="_blank"
@@ -38,7 +38,10 @@ export default function UserResult() {
             Joined {dateFormat(user.created_at, 'dd mmm yyyy')}
           </p>
         </div>
-        <p className="user__bio">{user.bio}</p>
+        <p className="user__bio">
+          {user.bio ? user.bio : 'This profile has no bio'}
+        </p>
+
         <ul className={`user__stats ${mode}`}>
           <li className="user__stats--item">
             <p>Repos</p>

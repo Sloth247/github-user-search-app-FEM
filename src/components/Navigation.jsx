@@ -17,11 +17,7 @@ export default function Navigation() {
         <Link to="/" className={`header__logo ${mode}`}>
           devfinder
         </Link>
-        <button
-          aria-hidden="true"
-          className={`header__theme-btn ${mode}`}
-          onClick={handleToggle}
-        >
+        <button className={`header__theme-btn ${mode}`} onClick={handleToggle}>
           <span>{mode === 'dark' ? 'Light' : 'Dark'}</span>
           {mode === 'dark' ? <Sun /> : <Moon />}
         </button>
