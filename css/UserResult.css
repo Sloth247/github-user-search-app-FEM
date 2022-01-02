@@ -95,6 +95,7 @@
   .user__date {
     grid-column: 2/-1;
     grid-row: 1/2;
+    justify-self: end;
   }
 }
 .user__bio {
